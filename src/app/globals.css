@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 2px solid #e2e8f0;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.navBrand span {
+  font-size: 0.75rem;
+  color: #0284c7;
+  font-weight: 700;
+  display: block;
+  text-transform: uppercase;
+}
+
+.navBrand strong {
+  font-size: 1.1rem;
+  color: #1e3a8a;
+}
+
+.navLinks {
+  display: flex;
+  gap: 8px;
+}
+
+.navItem {
+  text-decoration: none;
+  color: #64748b;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  transition: all 0.2s ease;
+}
+
+.navItem:hover {
+  background: #f1f5f9;
+  color: #0284c7;
+}
+
+.active {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+/* 🖨️ KONTROL CETAK PDF (Menyembunyikan Navbar saat cetak LKPD) */
+@media print {
+  .navbar {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+}
